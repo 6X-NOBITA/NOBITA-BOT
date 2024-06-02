@@ -23,28 +23,28 @@ dipto.startsWith('https://www.facebook.com') ||
 dipto.startsWith('https://fb.watch')||
 dipto.startsWith('https://www.instagram.com/')|| dipto.startsWith('https://youtu.be/') ||
 dipto.startsWith('https://www.instagram.com/p/') || dipto.startsWith('https://pin.it/') || dipto.startsWith('https://youtube.com/') || dipto.startsWith('https://www.capcut.com/') || dipto.startsWith('https://www.threads.net/') || dipto.startsWith('https://twitter.com/') || dipto.startsWith('https://x.com/') || dipto.startsWith('https://l.likee.video/')){
-  api.sendMessage("𝐃𝐨𝐰𝐧𝐥𝐨𝐚d𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐕𝐢d𝐞𝐨 𝐁𝐚𝐛𝐲 𝐉𝐚𝐬𝐭 𝐅𝐞𝐰 𝐌𝐢𝐧𝐮𝐭𝐞", event.threadID, event.messageID);
+  api.sendMessage("𝐃𝐨𝐰𝐧𝐥𝐨𝐚d𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐕𝐢d𝐞𝐨 𝐁𝐚𝐛𝐲 𝐉𝐮𝐬𝐭 𝐅𝐞𝐰 𝐌𝐢𝐧𝐮𝐭𝐞..🔥", event.threadID, event.messageID);
   if (!dipto) {
-    api.sendMessage("please put a valid fb video link", event.threadID, event.messageID);
+    api.sendMessage("ᴘʟᴇᴀꜱᴇ ᴘᴜᴛ ᴀ ᴠᴀʟɪᴅ ꜰʙ ᴠɪᴅᴇᴏ ʟɪɴᴋ..", event.threadID, event.messageID);
     return;
     }
 const aa = await axios.get(`https://noobs-api.onrender.com/dipto/alldl?url=${encodeURIComponent(dipto)}`);
    const bb = aa.data;
    const shortUrl = await tinyurl.shorten(bb.result);
-   const MSG = `✅ 🔗 Download Url: ${shortUrl}`;
+   const MSG = `✅ 🔗 ᴅᴏᴡɴʟᴏᴀᴅ ᴅᴏɴᴇ: ${shortUrl}`;
    let ex;
    let cp;
         if (bb.result.includes('.jpg')){
              ex = ".jpg";
-             cp = "Here's your Photo <😘";
+             cp = "ʜᴇʀᴇ'ꜱ ʏᴏᴜʀ ᴘʜᴏᴛᴏ <😘";
         }
         else if (bb.result.includes('.png')){
              ex = ".png";
-             cp = "Here's your Photo <😘";
+             cp = "ʜᴇʀᴇ'ꜱ ʏᴏᴜʀ ᴘʜᴏᴛᴏ <😘";
         }
         else if (bb.result.includes('.jpeg')){
              ex = ".jpeg";
-             cp = "Here's your Photo <😘";
+             cp = "ʜᴇʀᴇ'ꜱ ʏᴏᴜʀ ᴘʜᴏᴛᴏ <😘";
         }
         else { 
           ex = ".mp4";
