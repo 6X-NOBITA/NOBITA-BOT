@@ -61,7 +61,7 @@ if (dipto.startsWith('https://i.imgur.com')){
   const response = await axios.get(dipto, { responseType: 'arraybuffer' });
 const filename = __dirname + `/cache/dipto${dipto3}`;
     fs.writeFileSync(filename, Buffer.from(response.data, 'binary'));
-    api.sendMessage({body: `Downloaded from link`,attachment: fs.createReadStream(filename)},event.threadID,
+    api.sendMessage({body: `ᴅᴏᴡɴʟᴏᴀᴅ ꜰʀᴏᴍ ʟɪɴᴋ ✅`,attachment: fs.createReadStream(filename)},event.threadID,
   () => fs.unlinkSync(filename),event.messageID)
 }
 } catch (e) {
