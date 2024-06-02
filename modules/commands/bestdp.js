@@ -2,7 +2,7 @@ module.exports.config = {
   name: "bestdp",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "RAHAT",
+  credits: "SHAWON",
   description: "Friends Dp photos",
   commandCategory: "Random-IMG",
   usages: "bestie dp",
