@@ -3,7 +3,7 @@ module.exports.config = {
   name: "আয়াত",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "RAHAT",
+  credits: "NOBITA-BOT",
   description: "আয়াত VEDIO",
   commandCategory: "Hình ảnh",
   usages: "আয়াত vedio",
@@ -19,7 +19,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-   var hi = ["সূরা_\n\n\n_create_by__Khan Rahul RK💖✨__\n\n\n"];
+   var hi = ["সূরা_\n\n\n_ᴄʀᴇᴀᴛᴇ_ʙʏ_ɴᴏʙɪᴛᴀ-ᴄʜᴀᴛ ʙᴏᴛ💖✨__\n\n\n"];
   var know = hi[Math.floor(Math.random() * hi.length)];
   var link = [
   "https://drive.google.com/uc?id=10bXR3lygrrxEjrOr_vWMZ4vzAWSo7NWO",
