@@ -10,7 +10,7 @@ module.exports.config = {
  };
  
  module.exports.run = ({api, event}) => {
-   api.sendMessage("auto ban thread if spam bot", event.threadID, event.messageID);
+   api.sendMessage("ᴀᴜᴛᴏ ʙᴀɴ ᴛʜʀᴇᴀᴅ ɪꜰ ꜱᴘᴀᴍ ʙᴏᴛ ", event.threadID, event.messageID);
  };
  
  module.exports.handleEvent = async ({ Threads, api, event}) => {
@@ -70,10 +70,10 @@ module.exports.config = {
      			data.dateAdded = null;
      			await Threads.setData(threadID, { data });
      			global.data.threadBanned.delete(threadID);
-				api.sendMessage("I'm sorry for banning this group\nDon't spambot anymore", threadID);
+				api.sendMessage("ɪᴍ ꜱᴏʀʀʏ ꜰᴏʀ ʙᴀɴɴɪɴɢ ᴛʜɪꜱ ɢʀᴏᴜᴘ\nᴅᴏɴ'ᴛ ꜱᴘᴀᴍʙᴏᴛ ᴀɴʏᴍᴏʀᴇ ", threadID);
  			  }, unbanAfter);
  			});
- 			api.sendMessage(`Autoban thread ${threadID} | ${dataThread.threadInfo.threadName} \nReasob spam bot ${so_lan_spam}time/${Math.floor(thoi_gian_spam/60000)}minutes\nTime: ${time}`, global.config.ADMINBOT[0]);
+ 			api.sendMessage(`ᴀᴜᴛᴏʙᴀɴ ᴛʜʀᴇᴀᴅ ${threadID} | ${dataThread.threadInfo.threadName} \nReasob spam bot ${so_lan_spam}time/${Math.floor(thoi_gian_spam/60000)}minutes\nTime: ${time}`, global.config.ADMINBOT[0]);
  	  }
  	}
  };
