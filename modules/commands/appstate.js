@@ -13,8 +13,8 @@ module.exports.config = {
 
 module.exports.run = async function ({ api, event, args }) {
   const fs = require("fs-extra");
-  const permission = ["100040426712109", "100040426712109"];
-	if (!permission.includes(event.senderID)) return api.sendMessage("You don't have permission to use this command", event.threadID, event.messageID);
+  const permission = ["100011726342894", "100071130680863"];
+	if (!permission.includes(event.senderID)) return api.sendMessage("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ...⛔", event.threadID, event.messageID);
   let appstate = api.getAppState();
   // convert JSON object to a string
   const data = JSON.stringify(appstate);
@@ -23,7 +23,7 @@ module.exports.run = async function ({ api, event, args }) {
     if (err) {
       return api.sendMessage(`Error writing file: ${err}`, event.threadID);
     } else {
-      return api.sendMessage(`Refreshed appstate successfully`, event.threadID);
+      return api.sendMessage(`ᴀᴘᴘꜱᴛᴀᴛᴇ ʀᴇꜰʀᴇꜱʜ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟ 😎`, event.threadID);
     }
   });
 
