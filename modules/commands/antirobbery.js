@@ -12,7 +12,7 @@ module.exports.config = {
 module.exports.run = async({ api, event, Threads}) => {
     const info = await api.getThreadInfo(event.threadID);
     if (!info.adminIDs.some(item => item.id == api.getCurrentUserID())) 
-      return api.sendMessage('Need group administrator permissions, please add and try again!', event.threadID, event.messageID);
+      return api.sendMessage('ɴᴇᴇᴅ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴɪꜱᴛʀᴀᴛᴏʀ ᴘᴇʀᴍɪꜱꜱɪᴏɴ - ᴘʟᴇᴀꜱᴇ ᴀᴅᴅ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ…💛', event.threadID, event.messageID);
     const data = (await Threads.getData(event.threadID)).data || {};
     if (typeof data["guard"] == "guard" || data["guard"] == false) data["guard"] = true;
     else data["guard"] = false;
