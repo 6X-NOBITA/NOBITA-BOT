@@ -74,6 +74,6 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.postimg.cc/j2wwXCSg/FB-IMG-1670168126904.jpg",
     ];
 
-var callback = () => api.sendMessage({body:`ভালোবাসার আরেক নাম!😍\nArgentina💥\n\nKhan Rahul RK: ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
+var callback = () => api.sendMessage({body:`🥰 ʟᴏᴠᴇ ᴏꜰ ᴀʀɢᴇɴᴛɪɴᴀ✨🔥\n\n ɴᴏʙɪᴛᴀ-ʙᴏᴛ 🤖 : ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
    };
