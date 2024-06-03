@@ -62,6 +62,10 @@ if ((event.body.toLowerCase() == " bot love you") || (event.body.toLowerCase() =
    if ((event.body.toLowerCase() == "hii") || (event.body.toLowerCase() == "hiii")) {
      return api.sendMessage("️Hello-!!❤️", threadID, messageID);
    };
+
+if ((event.body.toLowerCase() == "🥵") || (event.body.toLowerCase() == "💋")) {
+     return api.sendMessage("️ সোনা আসো তোমায় আদর দেই- দিমু আদর ভিজে যাবে চাদর🤤", threadID);
+   };
    
    if ((event.body.toLowerCase() == "😘") || (event.body.toLowerCase() == "😘😘")) {
      return api.sendMessage("️সর হালা  কিস দিস না-!!😏", threadID, messageID);
@@ -75,6 +79,10 @@ if ((event.body.toLowerCase() == " bot love you") || (event.body.toLowerCase() =
      return api.sendMessage("️আস্তাগফিরুল্লাহ এগুলো ভালো না-!!🙂", threadID, messageID);
    };
    
+if ((event.body.toLowerCase() == "🤤") || (event.body.toLowerCase() == "Uffff")) {
+     return api.sendMessage("️ ঝাং তুমি কি হট হয়ে গেলে তাহলে আসো আদর করি🥵💋", threadID);
+   };
+
    if ((event.body.toLowerCase() == "bot kar") || (event.body.toLowerCase() == "bot kar ata")) {
      return api.sendMessage("শাওন আর নবিতা বস আমাকে বানাইছে-!!👀", threadID, messageID);
       };
