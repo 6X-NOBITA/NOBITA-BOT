@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "bye",
      	version: "1.0.1",
 	hasPermssion: 0,
-	credits: "RAHUL", 
+	credits: "Shawon Sheikh", 
 	description: "No prefix",
 	commandCategory: "null",
 	usages: "...",
@@ -13,7 +13,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	if (event.body.indexOf("maya nalang")==0 || (event.body.indexOf("by")==0 || (event.body.indexOf("bye")==0 || (event.body.indexOf("Bye")==0)))) {
 		var msg = {
-				body: "take your time."
+				body: "🅰🅻🅻🅰🅷 🅷🅰🅵🅰🆉..💖"
 			}
 			api.sendMessage(msg, threadID, messageID);
 setTimeout(() => {
