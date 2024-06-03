@@ -67,10 +67,10 @@ module.exports.run = async function ({ event, api, args }) {
     const { threadID, messageID, senderID } = event;
     var mention = Object.keys(event.mentions)[0]
     let tag = event.mentions[mention].replace("@", "");
-    if (!mention) return api.sendMessage("Vui lòng tag 1 người", threadID, messageID);
+    if (!mention) return api.sendMessage("ᴘʟᴇᴀꜱᴇ ᴍᴇɴᴛɪᴏɴ 1 ᴘᴇʀꜱᴏɴ.", threadID, messageID);
     else {
         var one = senderID, two = mention;
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "অনেক সুন্দর জুটি 💏 ",
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "🄻🄾🅅🄴 🄾🄵 🄲🄾🅄🄿🄻🄴 💏 ",
             mentions: [{
           tag: tag,
           id: mention
