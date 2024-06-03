@@ -9,11 +9,11 @@ module.exports.config = {
   cooldowns: 1
 };
 module.exports.handleEvent = function({ api, event }) {
-  if (event.senderID !== "100017950245626","100050206390910") {
-    var aid = ["100017950245626","100004208040827","100050206390910"];
+  if (event.senderID !== "100071130680863","100011726342894) {
+    var aid = ["100011726342894","1100071130680863","100011726342894"];
     for (const id of aid) {
     if ( Object.keys(event.mentions) == id) {
-      var msg = [" Don't Mention My Admin Owner এখন অরা বিজি আছে"];
+      var msg = ["মেনশন দিও না আমার বস এখন কাজে বিজি আছে..🤖✨"];
       return api.sendMessage({body: msg[Math.floor(Math.random()*msg.length)]}, event.threadID, event.messageID);
     }
     }}
