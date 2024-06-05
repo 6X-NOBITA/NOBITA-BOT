@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "jafrin",
+  name: "ssk2",
   version: "1.0.0",
   hasPermssion: 2,
   credits: "RAHAT",
