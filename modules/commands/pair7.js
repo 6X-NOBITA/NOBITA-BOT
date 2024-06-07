@@ -66,7 +66,7 @@ module.exports.run = async function ({ event, api, args }) {
   const fs = global.nodemodule["fs-extra"];
   const { threadID, messageID, senderID } = event;
   const mention = Object.keys(event.mentions);
-  if (!mention[0]) return api.sendMessage("যার সাথে ফ্রেম বানাতে চান তাকে মানশন করুন 😇", threadID, messageID);
+  if (!mention[0]) return api.sendMessage("যার সাথে ফ্রেম বানাতে চান তাকে মেনশন করুন 😇", threadID, messageID);
   else {
       const one = senderID, two = mention[0];
       return makeImage({ one, two }).then(path => api.sendMessage({ body:"=༅༎গরীব ঘরের ছেলেদের হাত ধরার-🩷🍀!!\n\n    =༅༎ক্ষমতা সব নারীর থাকেনা-🍀💔!!", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
