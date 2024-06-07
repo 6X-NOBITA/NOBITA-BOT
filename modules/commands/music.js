@@ -45,10 +45,10 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
     try {
         var path = `${__dirname}/cache/1.mp3`
         var data = await downloadMusicFromYoutube('https://www.youtube.com/watch?v=' + handleReply.link[event.body -1], path);
-        if (fs.statSync(path).size > 26214400) return api.sendMessage('The file cannot be sent because the capacity is greater than 25MB.', event.threadID, () => fs.unlinkSync(path), event.messageID);
+        if (fs.statSync(path).size > 26214400) return api.sendMessage('ᴛʜᴇ ꜰɪʟᴇ ᴄᴀɴɴᴏᴛ ʙᴇ ꜱᴇɴᴛ ʙᴇᴄᴀᴍᴇ ʏʜᴇ ᴄᴀᴘᴀᴄɪᴛʏ ɪꜱ ɢʀᴇᴀᴛᴇʀ ᴛʜᴀɴ 25 ᴍʙ👀✨', event.threadID, () => fs.unlinkSync(path), event.messageID);
         api.unsendMessage(handleReply.messageID)
         return api.sendMessage({ 
-    body: `🎵 Title: ${data.title}\n🎶 Name Channel : ${data.author}\n⏱️ Time: ${this.convertHMS(data.dur)}\n👀 Views: ${data.viewCount}\n🥰 Likes: ${data.likes}\n⏱️Processing time: ${Math.floor((Date.now()- data.timestart)/1000)} second\n♪====「 𝐊𝐡𝐚𝐧 𝐑𝐚𝐡𝐮𝐥 𝐑𝐊 」====♪`,
+    body: `🎵 Title: ${data.ᴛɪᴛʟᴇ}\n🎶 ɴᴀᴍᴇ ᴄʜᴀɴɴᴇʟ : ${data.author}\n⏱️ ᴛɪᴍᴇ: ${this.convertHMS(data.dur)}\n👀 ᴠɪᴇᴡꜱ: ${data.viewCount}\n🥰 ʟɪᴋᴇꜱ: ${data.likes}\n⏱️ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛɪᴍᴇ: ${Math.floor((Date.now()- data.timestart)/1000)} second\n♪====「 ɴᴏʙɪᴛᴀ-ᴄʜᴀᴛ ʙᴏᴛ..✨💖 」====♪`,
             attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
          event.messageID)
 
@@ -66,7 +66,7 @@ module.exports.convertHMS = function(value) {
     return (hours != '00' ? hours +':': '') + minutes+':'+seconds;
 }
 module.exports.run = async function ({ api, event, args }) {
-    if (args.length == 0 || !args) return api.sendMessage('» উফফ আবাল কি গান শুনতে চাস তার ২/১ লাইন তো লেখবি নাকি 🥵 empty!', event.threadID, event.messageID);
+    if (args.length == 0 || !args) return api.sendMessage('» উফফ আবাল কি গান শুনতে চাস তার ২/১ লাইন তো লেখবি নাকি 🥵 𝐄𝐦𝐩𝐭𝐲!!', event.threadID, event.messageID);
     const keywordSearch = args.join(" ");
     var path = `${__dirname}/cache/1.mp3`
     if (fs.existsSync(path)) { 
@@ -77,7 +77,7 @@ module.exports.run = async function ({ api, event, args }) {
             var data = await downloadMusicFromYoutube(args.join(" "), path);
             if (fs.statSync(path).size > 26214400) return api.sendMessage('Unable to send files because the capacity is greater than 25MB .', event.threadID, () => fs.unlinkSync(path), event.messageID);
             return api.sendMessage({ 
-                body: `🎵 Title: ${data.title}\n🎶 Name Channel: ${data.author}\n⏱️ Time: ${this.convertHMS(data.dur)}\n👀 Views: ${data.viewCount}\n👍 Likes: ${data.likes}\n⏱️ Processing time: ${Math.floor((Date.now()- data.timestart)/1000)} second\n💿====𝐊𝐡𝐚𝐧 𝐑𝐚𝐡𝐮𝐥 𝐑𝐊====💿`,
+                body: `🎵 Title: ${data.ᴛɪᴛʟᴇ}\n🎶 ɴᴀᴍᴇ ᴄʜᴀɴɴᴇʟ: ${data.author}\n⏱️ ᴛɪᴍᴇ: ${this.convertHMS(data.dur)}\n👀 ᴠɪᴇᴡꜱ: ${data.viewCount}\n👍 ʟɪᴋᴇꜱ: ${data.likes}\n⏱️ ᴘʀᴏᴄᴇꜱꜱɪɴɢ ᴛɪᴍᴇ: ${Math.floor((Date.now()- data.timestart)/1000)} second\n💿====ɴᴏʙɪᴛᴀ-ᴄʜᴀᴛ ʙᴏᴛ🌸====💿`,
                 attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
             event.messageID)
 
@@ -95,7 +95,7 @@ module.exports.run = async function ({ api, event, args }) {
               num = num+=1
               msg += (`${num} - ${value.title} (${value.length.simpleText})\n\n`);
             }
-            var body = `»🔎 There's ${link.length} the result coincides with your search keyword:\n\n${msg}» Reply(feedback) select one of the searches above `
+            var body = `»🔎 ᴛʜᴇʀᴇ'ꜱ ${link.length} ᴛʜᴇ ʀᴇꜱᴜʟᴛ ᴄᴏɪɴᴄɪᴅᴇꜱ ᴡɪᴛʜ ʏᴏᴜʀ ꜱᴇᴀʀᴄʜ ᴋᴇʏʙᴏᴀʀᴅ:\n\n${msg}» ʀᴇᴘʟʏ (ꜰᴇᴇᴅʙᴀᴄᴋ) ꜱᴇʟᴇᴄᴛ ᴏɴᴇ ᴏꜰ ᴛʜᴇ ꜱᴇᴀʀᴄʜᴇꜱ ᴀʙᴏᴠᴇ `
             return api.sendMessage({
               body: body
             }, event.threadID, (error, info) => global.client.handleReply.push({
@@ -106,7 +106,7 @@ module.exports.run = async function ({ api, event, args }) {
               link
             }), event.messageID);
           } catch(e) {
-            return api.sendMessage('An error has occurred, please try again in a moment!!\n' + e, event.threadID, event.messageID);
+            return api.sendMessage('ᴀɴ ᴇʀʀᴏʀ ʜᴀꜱ ᴏᴄᴄᴜʀʀᴇᴅ'ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ ɪɴ ᴀ ᴍᴏᴍᴇɴᴛ..!!\n' + e, event.threadID, event.messageID);
         }
     }
                                                                                                                                                                                                        }
