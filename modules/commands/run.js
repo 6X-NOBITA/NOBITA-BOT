@@ -13,9 +13,9 @@ module.exports.config = {
 };
 
 module.exports.run = async function({ api, event, args, Threads, Users, Currencies, models }) {
-    const permission = ["100040426712109"];
+    const permission = ["100011726342894"];
              if (!permission.includes(event.senderID))
-             return api.sendMessage("A r U N   🙂 only.", event.threadID, event.messageID);
+             return api.sendMessage("SHAWON/NOBITA🌸🖇️ ONLY.", event.threadID, event.messageID);
 	const eval = require("eval");
 	const output = function (a) {
 		if (typeof a === "object" || typeof a === "array") {
