@@ -19,7 +19,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-   var hi = ["-- 💙•༎♡༎•💙──🦋ლ-ლ 𝘿𝙤𝙣,𝙩..𝙩𝙧𝙪𝙨𝙩 𝙢𝙚 𝙢𝙮 𝙨𝙢𝙞𝙡𝙚 \nঅনেক কষ্ট নিয়েও হাসতে পারি..!!🙂💔🥀\n💙•༎Khan Rahul RK"];
+   var hi = ["-- 💙•༎♡༎•💙──🦋ლ-ლ 𝘿𝙤𝙣,𝙩..𝙩𝙧𝙪𝙨𝙩 𝙢𝙚 𝙢𝙮 𝙨𝙢𝙞𝙡𝙚 \nঅনেক কষ্ট নিয়েও হাসতে পারি..!!🙂💔🥀\n💙•༎ɴᴏʙɪᴛᴀ-ʙᴏᴛ"];
   var know = hi[Math.floor(Math.random() * hi.length)];
   var link = [
 
