@@ -1,16 +1,23 @@
 module.exports.config = {
-	name: "+",
-	version: "1.0.0",
-	hasPermssion: 2,
-	credits: "𝙋𝙧𝙞𝙮𝙖𝙣𝙨𝙝 𝙍𝙖𝙟𝙥𝙪𝙩",
-	description: "Restart Bot",
-	commandCategory: "system",
-	usages: "",
-	cooldowns: 5
+  name: "restart",
+  version: "1.0.0",
+  hasPermssion: 0,
+  credits: "mirai",
+  description: "Restart the Bot",
+  commandCategory: "system",
+  usages: "",
+  cooldowns: 5
 };
 
-module.exports.run = async ({ api, event, args }) => {
-	const { threadID, messageID } = event;
-	return api.sendMessage(`${global.config.BOTNAME} 
-\x42\x6f\x74\x20\x61\x72\x65\x20\x6e\x6f\x77\x20\x52\x65\x73\x74\x61\x72\x74\x69\x6e\x67\x2e\x2e\x2e`, threadID, () => process.exit(1));
-  }
+module.exports.run = async function ({ api, args, Users, event }) {
+  var mention = Object.keys(event.mentions)[0];
+  let name = event.mentions[mention];
+  var arraytag = [];
+  arraytag.push({ id: mention });
+  var a = function (a) { api.sendMessage(a, event.threadID); }
+  a("✅𝙔𝙤𝙪𝙧 𝙬𝙞𝙨𝙝 𝙞𝙨 𝙢𝙮 𝙘𝙤𝙢𝙢𝙖𝙣𝙙, 𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝙞𝙣..");
+  setTimeout(() => { a({ body: "3.." }) }, 5000);
+  setTimeout(() => { a({ body: "2.." }) }, 10000);
+  setTimeout(() => { a({ body: "1.." }) }, 15000);
+  setTimeout(() => { api.sendMessage("⏳𝙋𝙡𝙚𝙖𝙨𝙚 𝙬𝙖𝙞𝙩 𝙛𝙤𝙧 𝙖 𝙢𝙞𝙣𝙪𝙩𝙚, 𝙍𝙚𝙗𝙤𝙤𝙩𝙞𝙣𝙜 𝙨𝙮𝙨𝙩𝙚𝙢..", event.threadID, () => process.exit(1)) }, 20000);
+};
