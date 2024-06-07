@@ -18,7 +18,7 @@ var audio = args.join(" ") || event.messageReply.attachments[0].url;
   var { data } = await axios.get(audio ,{  method: 'GET',  responseType: 'arraybuffer' });
               fs.writeFileSync(__dirname + "/cache/vdtoau.m4a", Buffer.from(data, 'utf-8'));
 audioss.push(fs.createReadStream(__dirname + "/cache/vdtoau.m4a"));
-  var msg = { body : "𝗖𝗼𝘃𝗲𝗿𝘁 𝘀𝗮𝗻𝗴 𝗠𝗣𝟯 🎶\n𓆩𝐊𝐇𝐀𝐍 𝐑𝐀𝐇𝐔𝐋 𝐑𝐊‣᭄𓆪- ⓪⑨🔥𓆪🥵💦", attachment: audioss}
+  var msg = { body : "𝗖𝗼𝗻𝘃𝗲𝗿𝘁 𝗦𝗼𝗻𝗴 𝗠𝗣𝟯 🎶\n𓆩𝐍𝐎𝐁𝐈𝐓𝐀-𝐁𝐎𝐓‣᭄𓆪- ⓪⑨🔥𓆪🥵💦", attachment: audioss}
 api.sendMessage(msg, event.threadID, event.messageID)
 } catch(e){
   console.log(e)
