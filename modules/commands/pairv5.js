@@ -45,7 +45,7 @@ module.exports.run = async function({ api, event,Threads, Users }) {
               imglove.push(fs.createReadStream(__dirname + "/cache/avt2.png"));
 
         var msg = {body: `❰Cϴ𝝢Ĝ𝙍Uɭ𝘼Ƭĭϴ𝝢𝘚❱
-\n🫀Sada kush rehyao yehe dua hai humyre🙈
+\n🫀অনেক ভালোবাসি তোমায় বুঝছো জান😘🙈
 \n𝙃𝙀𝘼𝙍𝙏𝘽𝙀𝘼𝙏 𝘾𝙊𝙐𝙉𝙏 ❣︎ ${tle}%
 \n`+namee+" "+"💝"+" "+name, mentions: arraytag, attachment: imglove}
         return api.sendMessage(msg, event.threadID, event.messageID)
