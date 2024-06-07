@@ -98,7 +98,7 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
   fs.writeFileSync(pathImg, imageBuffer);
   fs.removeSync(pathAvt1);
   fs.removeSync(pathAvt2);
-  return api.sendMessage({ body: `𝙘𝙤𝙣𝙜𝙧𝙖𝙩𝙪𝙡𝙖𝙩𝙞𝙤𝙣𝙨, ${name1} 🅢🅤🅒🅒🅔🅢🅢🅕🅤🅛🅛🅨 🇵 🇦 🇮 🇷 🇪 🇩 🅆🄸🅃🄷 ${name2}\n𝙩𝙝𝙚 𝙤𝙙𝙙𝙨 𝙖𝙧𝙚 ${tile}%`,
+  return api.sendMessage({ body: `𝙘𝙤𝙣𝙜𝙧𝙖𝙩𝙪𝙡𝙖𝙩𝙞𝙤𝙣𝙨, ${name1} 🅢🅤🅒🅒🅔🅢🅢🅕🅤🅛🅛🅨 🇵 🇦 🇮 🇷 🇪 🇩 🅆🄸🅃🄷 ${name2}\nভালোবাসা:)😍🦋❤️${tile}%`,
             mentions: [{
           tag: `${name2}`,
           id: id2
