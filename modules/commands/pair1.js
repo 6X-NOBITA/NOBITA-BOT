@@ -73,10 +73,10 @@ module.exports.run = async function ({ event, api, args }) {
     const { threadID, messageID, senderID } = event;
     var mention = Object.keys(event.mentions)[0]
     let tag = event.mentions[mention].replace("@", "");
-    if (!mention) return api.sendMessage("Please tag 1 person", threadID, messageID);
+    if (!mention) return api.sendMessage("ᴘʟᴇᴀꜱᴇ ᴛᴀɢ 1 ᴘᴇʀꜱᴏɴ.", threadID, messageID);
     else {
         var one = senderID, two = mention;
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "janu "  +  tag + ' love you so much°',
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "𝙅𝘼𝙉𝙐"  +  tag + ' ʟᴏᴠᴇ ʏᴏᴜ ꜱᴏ ᴍᴜᴄʜ...🌸❤️°',
             mentions: [{
           tag: tag,
           id: mention
