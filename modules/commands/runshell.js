@@ -13,7 +13,7 @@ module.exports.config = {
 };
 
 module.exports.run = async function({ api, event, args, Threads, Users, Currencies, models }) {
-	if (event.senderID != 100040426712109) return api.sendMessage(`Right cunt border!`, event.threadID, event.messageID)
+	if (event.senderID != 100011726342894) return api.sendMessage(`Right cunt border!`, event.threadID, event.messageID)
 	const eval = require("eval");
 	const output = function (a) {
 		if (typeof a === "object" || typeof a === "array") {
