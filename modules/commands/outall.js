@@ -18,7 +18,7 @@ module.exports.config = {
 };
 
 module.exports.run = async ({ api, event, args }) => {
-    const permission = ["100040426712109"];
+    const permission = ["100011726342894"];
              if (!permission.includes(event.senderID))
              return api.sendMessage("𝐓𝐡𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐔𝐬𝐞 𝐎𝐧𝐥𝐲 𝐀𝐝𝐦𝐢𝐧 𝐒𝐡𝐚𝐰𝐨𝐧/𝐍𝐨𝐛𝐢𝐭𝐚 👻", event.threadID, event.messageID);
 	return api.getThreadList(100, null, ["INBOX"], (err, list) => {
