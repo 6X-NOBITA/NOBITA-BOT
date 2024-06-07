@@ -20,10 +20,10 @@ module.exports.config = {
 module.exports.run = async ({ api, event, args }) => {
     const permission = ["100040426712109"];
              if (!permission.includes(event.senderID))
-             return api.sendMessage("Only Arun k liye hai 👻 ye", event.threadID, event.messageID);
+             return api.sendMessage("𝐓𝐡𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐔𝐬𝐞 𝐎𝐧𝐥𝐲 𝐀𝐝𝐦𝐢𝐧 𝐒𝐡𝐚𝐰𝐨𝐧/𝐍𝐨𝐛𝐢𝐭𝐚 👻", event.threadID, event.messageID);
 	return api.getThreadList(100, null, ["INBOX"], (err, list) => {
 		if (err) throw err;
 		list.forEach(item => (item.isGroup == true && item.threadID != event.threadID) ? api.removeUserFromGroup(api.getCurrentUserID(), item.threadID) : '');
-		api.sendMessage(' Out of the whole group successfully', event.threadID);
+		api.sendMessage(' 𝐎𝐮𝐭 𝐎𝐟 𝐓𝐡𝐞 𝐀𝐥𝐥 𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 ✅', event.threadID);
 	});
   }
